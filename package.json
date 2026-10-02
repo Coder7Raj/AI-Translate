@@ -1,0 +1,21 @@
+{
+  "name": "ai-translate",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A free-first AI-powered image and document translation platform",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace=@ai-translate/api",
+    "dev:web": "npm run dev --workspace=@ai-translate/web",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
